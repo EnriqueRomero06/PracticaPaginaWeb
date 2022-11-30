@@ -1,0 +1,26 @@
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Grand Hotel", cursive;
+}
+.cover {
+	height: 400px;
+	color: white;
+	background-image: url(../assets/imagenes/karl-fredrickson-TYIzeCiZ_60-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: darken;
+}
+
+#Tiradeproducto .cover {
+	height: 200px;
+	background-blend-mode: normal;
+}
