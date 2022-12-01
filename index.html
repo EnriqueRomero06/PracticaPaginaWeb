@@ -16,21 +16,100 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="css/styles.css" />
-		<title>Practica</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="favicons/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="favicons/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="favicons/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="favicons/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="favicons/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="favicons/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="favicons/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="favicons/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicons/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="favicons/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="favicons/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicons/favicon-16x16.png"
+		/>
+		<title>Inicio</title>
 	</head>
 	<body>
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand" href="#"> LOGO </a>
+				<a class="navbar-brand" href="index.html">
+					<img
+						src="assets/imagenes/logo-removebg-preview.png"
+						alt="Logotipo"
+						width="30"
+						height="30"
+					/>
+				</a>
 				<ul class="nav">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+						<a class="nav-link active" aria-current="page" href="/">Inicio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Ubicación</a>
+						<a class="nav-link" href="#ubicacion">Ubicación</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Acerca de</a>
+						<a class="nav-link" href="#menu">Menú</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="acercade.html">Acerca de</a>
 					</li>
 				</ul>
 			</nav>
@@ -39,7 +118,9 @@
 			>
 				<h1>EasyCoffe</h1>
 				<p>El mejor cafe de El Salvador</p>
-				<button class="btn btn-secondary">Conoce más</button>
+				<a class="btn btn-secondary" href="acercade.html" role="button"
+					>Conoce más</a
+				>
 			</div>
 		</header>
 		<section>
@@ -109,7 +190,7 @@
 					<div class="col-12 col-sm-6">
 						<h3>¡Inicia tu dia con una taza de cafe!</h3>
 						<p>Ordena tu cafe a domicilio o visita tu EasyCoffe más cercano</p>
-						<a href="">Ir al mapa</a>
+						<a href="#ubicacion">Ir al mapa</a>
 					</div>
 				</div>
 				<form action="">
@@ -123,12 +204,12 @@
 				</form>
 			</div>
 		</section>
-		<section>
+		<section id="menu">
 			<!-- Tira de productos -->
 			<div class="container mt-3 mb-3">
-				<div>
-					<div id="Tiradeproducto">
-						<div class="card shadow p-3 mb-5 bg-body rounded border border-0">
+				<div class="tira-productos">
+					<div class="contenedor-tira">
+						<div class="card shadow p-1 mb-5 bg-body rounded border border-0">
 							<div
 								title="Cafe americano"
 								class="cover"
@@ -137,11 +218,11 @@
 								"
 							></div>
 							<div class="card-body">
-								<h5 class="card-title">cafe americano</h5>
+								<h5 class="card-title">Cafe americano</h5>
 								<span class="badge text-bg-info">$2.95 USD</span>
 							</div>
 						</div>
-						<div class="card shadow p-3 mb-5 bg-body rounded border border-0">
+						<div class="card shadow p-1 mb-5 bg-body rounded border border-0">
 							<div
 								title="Espresso"
 								class="cover"
@@ -154,7 +235,7 @@
 								<span class="badge text-bg-info">$4.95 USD </span>
 							</div>
 						</div>
-						<div class="card shadow p-3 mb-5 bg-body rounded border border-0">
+						<div class="card shadow p-1 mb-5 bg-body rounded border border-0">
 							<div
 								title="Macchiato"
 								class="cover"
@@ -167,7 +248,7 @@
 								<span class="badge text-bg-info">$5.75 USD </span>
 							</div>
 						</div>
-						<div class="card shadow p-3 mb-5 bg-body rounded border border-0">
+						<div class="card shadow p-1 mb-5 bg-body rounded border border-0">
 							<div
 								title="Cappuccino"
 								class="cover"
@@ -181,6 +262,23 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section id="ubicacion">
+			<div class="container mt-3 mb-3">
+				<h4>Nos encontramos en</h4>
+				<p>FR5Q+WW8, CA 1, San Miguel</p>
+				<div class="responsive-iframe">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1940.1159347266641!2d-88.16223956644532!3d13.459799532594133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7ad5f1babc2dd1%3A0xa350198b69535c04!2sRedondel%20Monse%C3%B1or%20Oscar%20Arnulfo%20Romero!5e0!3m2!1ses-419!2ssv!4v1669847289698!5m2!1ses-419!2ssv"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
 				</div>
 			</div>
 		</section>
